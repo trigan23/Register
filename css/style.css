@@ -1,0 +1,105 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    /* Перший варіант */
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(54,0,207,1) 43%, rgba(106,15,47,1) 90%, rgba(110,8,29,1) 100%);;
+    /* Animation BG */
+    /* background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+    background-size: 400% 400%;
+    animation: anime-bg 10s infinite ease-in-out; */
+
+
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 250px;
+}
+.wrapper{
+
+    width: 500px;
+    height: 400px;
+    padding: 10px;
+
+}
+.reg__title{
+    text-align: center;
+    font-size: large;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.reg__subtitle{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.label__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+label{
+    padding: 10px;
+}
+input{
+    border: 0;
+    border-radius: 6px;
+
+    padding: 10px;
+    margin-bottom: 40px;
+}
+.submit__btn{
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    overflow: hidden;
+    transition: color 1s;
+    padding: 5px;
+    margin-left: 178px;
+    font-size: 20px;
+}
+.submit__btn:hover{
+    color: #010662a4;
+}
+.submit__btn::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -25%;
+    width: 0;
+    height: 100%;
+    background-color: #fff;
+    transform: skewX(35deg);
+    z-index: -1;
+    transition: width 1s;
+}
+.submit__btn:hover::before{
+    width: 150%;
+}
+.signin{
+    margin-top: 40px;
+    text-align: center;
+}
+.signin p{
+    padding: 5px;
+}
+.signin a{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 1px solid white;
+   
+}
+/* Keygrame for animation BG */
+/* @keyframes anime-bg{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 50% 0;
+    }
+} */
